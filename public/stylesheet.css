@@ -1,0 +1,41 @@
+body {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+span {
+  background-color: black;
+  color: white;
+  font-size: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#container {
+  align-content: center;
+  text-align: center;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+.bluesquare {
+  background-color: #00b;
+  float: left;
+  height: 90px;
+  width: 90px;
+  margin: 5px;
+}
+
+.redsquare {
+  background-color: red;
+  float: right;
+  height: 90px;
+  width: 90px;
+  margin: 5px;
+}
