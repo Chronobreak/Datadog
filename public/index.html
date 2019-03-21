@@ -1,0 +1,39 @@
+<html>
+<link rel=stylesheet href="stylesheet.css" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+<script>
+document.addEventListener('click', function (event) {
+    if (event.target.matches('.bluesquare')) {
+        let xhr = new XMLHttpRequest()
+        xhr.open('POST', '/blue')
+        xhr.send()
+        xhr.onerror = function() {
+            console.log("Request to post /blue failed!");
+        }
+        alert("Voted for Blue Breezys")
+    } else if (event.target.matches('.redsquare')) {
+        let xhr = new XMLHttpRequest()
+        xhr.open('POST', '/red')
+        xhr.send()
+        xhr.onerror = function() {
+            console.log("Request to post /red failed!");
+        }
+        alert("Voted for Red Breezys")
+    }
+});
+</script>
+<body>
+    <div id="container">
+        <img src="http://www.pngall.com/wp-content/uploads/2016/06/Kanye-West.png"/>
+        <p>
+            <span><b><i>Breezys</i></b> &nbsp by &nbsp<b><i>Kanye</i></b></span>
+            <br>the open-toed shoe that's as fashionable as it is functional
+        </p>
+        <p>Vote Blue or Red below.</p>
+        <div class="center">
+            <div class="bluesquare"></div>
+            <div class="redsquare"></div>
+        </div>
+    </div>
+</body>
+</html>
